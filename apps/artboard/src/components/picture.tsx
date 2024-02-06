@@ -9,10 +9,11 @@ type PictureProps = {
 export const Picture = ({ className }: PictureProps) => {
   const picture = useArtboardStore((state) => state.resume.basics.picture);
   const fontSize = useArtboardStore((state) => state.resume.metadata.typography.font.size);
-
+  console.log('>>', useArtboardStore((state) => state.resume));
   if (!isUrl(picture.url) || picture.effects.hidden) return null;
 
   return (
+
     <img
       src={picture.url}
       alt="Profile"

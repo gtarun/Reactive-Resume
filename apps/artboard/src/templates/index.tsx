@@ -1,6 +1,7 @@
 import { Template } from "@reactive-resume/utils";
 
 import { Azurill } from "./azurill";
+import { Tarun } from "./tarun";
 import { Bronzor } from "./bronzor";
 import { Chikorita } from "./chikorita";
 import { Ditto } from "./ditto";
@@ -17,6 +18,8 @@ export const getTemplate = (template: Template) => {
   switch (template) {
     case "azurill":
       return Azurill;
+    case "tarun":
+      return Tarun;
     case "bronzor":
       return Bronzor;
     case "chikorita":
